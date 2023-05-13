@@ -8,6 +8,7 @@ const Users = () => {
 
     const handleDelete = _id =>{
         console.log( 'delete', _id);
+        // Sent to the server(backend)
         fetch(`http://localhost:5009/users/${_id}`, {
             method: 'DELETE'
         })
